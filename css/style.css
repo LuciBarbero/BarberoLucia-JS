@@ -39,13 +39,18 @@
   display: flex;
 }
 
+.cotizadorOnline{
+  padding-top: 30px;
+  text-align: center;
+}
+
 .cotizador{
   background-color: rgb(13, 46, 81);
   color: white;
   height: auto;
   width: 900px;
   margin:0px auto;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 #DetalleFactura, #tableDetailBill{
@@ -53,5 +58,14 @@
 }
 
 .submitbtn{
+  padding-left: 15px;
+}
+
+.costo{
+  background-color: rgb(13, 46, 81);
+  width: 900px;
+  height: auto;
+  color:white;
+  padding-top: 30px;
   padding-left: 15px;
 }

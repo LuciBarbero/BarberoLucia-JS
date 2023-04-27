@@ -1,66 +1,66 @@
 const catalogoProductos = [
     {
-      idProducto:1,
+      idProducto:0,
       nombreProducto:"Remera DryFit",
       precioProducto: 3300,
       stock: 10,
     },
     {
-      idProducto:2,
+      idProducto:1,
       nombreProducto:"Remera Cool Elastic",
       precioProducto: 3500,
       stock: 11,
     },
     {
-      idProducto:3,
+      idProducto:2,
       nombreProducto:"Short Webenit",
       precioProducto: 2200,
       stock: 12,
     },
     {
-      idProducto:4,
+      idProducto:3,
       nombreProducto:"Medias",
       precioProducto: 1500,
       stock: 25,
     },
     {
-      idProducto:5,
+      idProducto:4,
       nombreProducto:"Pollera Dama",
       precioProducto: 5000,
       stock: 100,
     },
   {
-    idProducto:6,
+    idProducto:5,
     nombreProducto:"Campera SoftShell",
     precioProducto: 5500,
     stock: 1,
   },
   {
-    idProducto:7,
+    idProducto:6,
     nombreProducto:"Pantalon Largo SoftShell",
     precioProducto: 4000,
     stock: 350,
   },
   {
-    idProducto:8,
+    idProducto:7,
     nombreProducto:"Buzo SoftShell",
     precioProducto: 5000,
     stock: 101,
   },
   {
-    idProducto:9,
+    idProducto:8,
     nombreProducto:"Campera SoftShell",
     precioProducto: 5000,
     stock: 105,
   },
   {
-    idProducto:10,
+    idProducto:9,
     nombreProducto:"Campera Rompeviento",
     precioProducto: 5800,
     stock: 410,
   },
   {
-    idProducto:11,
+    idProducto:10,
     nombreProducto:"Camperon largo",
     precioProducto: 9500,
     stock: 110,
@@ -69,7 +69,6 @@ const catalogoProductos = [
 
 function capturar() {
 
-
     data= [
       {
         idProducto: document.getElementById("IdProducto").value,
@@ -77,14 +76,12 @@ function capturar() {
       }
     ]
 
-    const myString = JSON.stringify(data);
-  console.log(myString);
-  console.log(myString[1].idProducto);
+  const Costo = catalogoProductos[data[0]["idProducto"]]["precioProducto"] * data[0]["cantidad"];
 
-
+  console.log(Costo);
+  
+  document.getElementById('input').innerHTML = Costo ;
 }
-
-
 
 
 /*function addRowProduct(){

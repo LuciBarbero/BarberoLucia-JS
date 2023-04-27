@@ -96,6 +96,9 @@
         </div>
     </header>
     <main> 
+        <div class="cotizadorOnline">
+            <h6>COTIZADOR ONLINE:</h6>
+        </div>
         <div class="cotizador">
             <form id="formAdd" method="POST" enctype="multipart/form-data" autocomplete="off">
                 <div class="row p-2">
@@ -143,25 +146,28 @@
                             <tr >
                                 <td><select id="IdProducto" name="IdProducto" style="width:650px" class="form-control" required>
                                         <option disabled selected>Producto</option>
-                                        <option value="1">Remera Dry Fit</option>
-                                        <option value="2">Remera Cool Elastic </option>
-                                        <option value="3">Short Webenit</option>
-                                        <option value="4">Medias</option>
-                                        <option value="5">Pollera Dama</option>
-                                        <option value="6">Campera SoftShell</option>
-                                        <option value="7">Pantalon Largo SoftShell</option>
-                                        <option value="8">Buzo SoftShell</option>
-                                        <option value="9">Campera SoftShell</option>
-                                        <option value="10">Campera Rompeviento</option>
-                                        <option value="11">Camperon largo</option>
+                                        <option value="0">Remera Dry Fit</option>
+                                        <option value="1">Remera Cool Elastic </option>
+                                        <option value="2">Short Webenit</option>
+                                        <option value="3">Medias</option>
+                                        <option value="4">Pollera Dama</option>
+                                        <option value="5">Campera SoftShell</option>
+                                        <option value="6">Pantalon Largo SoftShell</option>
+                                        <option value="7">Buzo SoftShell</option>
+                                        <option value="8">Campera SoftShell</option>
+                                        <option value="9">Campera Rompeviento</option>
+                                        <option value="10">Camperon largo</option>
                                     </select> /> </td>
                                 <td> <input type="text" class="form-control" placeholder="cantidad" aria-label="cantidad" id="amount" name="amount"required> </td>
                             </tr>
                         </tbody>
                         </table>
                         <div class="submitbtn">
-                            <button type="button" id="acceptAdd" class="btn btn-success" onclick="addRowProduct()">Agregar producto</button>
+                            <!-- <button type="button" id="acceptAdd" class="btn btn-success" onclick="addRowProduct()">Agregar producto</button> -->
                             <button type="button" id="acceptAdd" class="btn btn-success" onclick="capturar()">Cotizar</button> 
+                        </div>
+                        <div class="costo">
+                            <p> El costo es $ <span id="input"></span>.</p>
                         </div>
                     </div>
                 </div>
