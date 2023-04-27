@@ -1,0 +1,57 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navP{
+  padding:0px !important;
+}
+
+.encabezado{
+    background-color: rgb(13, 46, 81);
+    color: white;
+    padding: 5px 5px 5px 50px;
+}
+
+.navbar-brand{
+  color:white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header{
+  height: 50px;
+}
+
+.carousel{
+  height: 500px;
+}
+
+.carousel-item img{
+  height: 500px;
+}
+
+.main{
+  text-align: center;
+  padding-top: 50px;
+  display: flex;
+}
+
+.cotizador{
+  background-color: rgb(13, 46, 81);
+  color: white;
+  height: auto;
+  width: 900px;
+  margin:0px auto;
+  margin-top: 50px;
+}
+
+#DetalleFactura, #tableDetailBill{
+  color:white;
+}
+
+.submitbtn{
+  padding-left: 15px;
+}
